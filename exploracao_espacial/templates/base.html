@@ -1,11 +1,14 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Exploração Espacial</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Space+Mono">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="{% static "estilos.css" %}">
+    <link rel="stylesheet" href="{% static "phili.css" %}">
+    <link rel="shortcut icon" href="{% static "img/favicon.png" %}">
   </head>
   <body>
     <header>
@@ -24,7 +27,7 @@
     <main>
       {% block main %}{% endblock %}
     </main>
-    <script src="home.js"></script>
-    <script src="philiae.js"></script>
+    <script src="{% static "home.js" %}"></script>
+    <script src="{% static "philiae.js" %}"></script>
   </body>
 </html>

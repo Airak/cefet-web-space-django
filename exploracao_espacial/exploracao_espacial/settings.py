@@ -68,6 +68,12 @@ TEMPLATES = [
     },
 ]
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "/static"),
+    '/var/www/static/',
+]
+STATIC_URL = '/static/'
+
 WSGI_APPLICATION = 'exploracao_espacial.wsgi.application'
 
 
